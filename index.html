@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"> -->
+  </head>
+  <body>
+    <h2>Sentence Analyzer</h2>
+    <p class="alert" id="errorMsg">Please fill in something</p>
+    <textarea
+      id="sentenceInput"
+      placeholder="Enter a sentence here..."
+    ></textarea>
+
+    <div class="buttons">
+      <button onclick="analyzeVowels()">How many vowels?</button>
+      <button onclick="analyzeConsonants()">How many consonants?</button>
+      <button onclick="analyzePunctuation()">How many punctuation marks?</button>
+      <button onclick="analyzeWords()">How many words?</button>
+      <button onclick="clearOutput()">Clear</button>
+    </div>
+
+    <div class="result" id="output"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
