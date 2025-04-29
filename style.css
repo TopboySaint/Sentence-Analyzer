@@ -41,9 +41,10 @@ body {
   }
 
   .result {
+    color: #fff;
     margin-top: 20px;
-    padding: 10px;
-    background: #fff;
+    padding-top: 10px;
+    background: gray;
     border-radius: 5px;
     font-size: 18px;
     min-height: 30px;

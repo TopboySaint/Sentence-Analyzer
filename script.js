@@ -83,4 +83,9 @@ function analyzePunctuation() {
     }
   }
 
+  function clearOutput() {
+    document.getElementById("sentenceInput").value = "";
+    document.getElementById("output").innerText = "";
+  }
+
 
