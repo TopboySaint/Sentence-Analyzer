@@ -67,11 +67,20 @@ function analyzePunctuation() {
   }
   
 
-function getWordCount(sentence) {
-  if (sentence.trim() === "") {
-    return 0;
+
+  function analyzeWords() {
+    const sentence = document.getElementById("sentenceInput").value;
+    const result = document.getElementById("output");
+    const errorMsg = document.getElementById("errorMsg");
+    const words = sentence.trim().split(/\s+/);
+  
+    if (sentence.trim() === "") {
+      errorMsg.style.display = "block";
+      result.innerHTML = "";
+    } else {
+      errorMsg.style.display = "none";
+      result.innerHTML = `Number of words: ${words.length}`;
+    }
   }
 
-  const words = sentence.trim().split(/\s+/);
-  return words.length;
-}
+
